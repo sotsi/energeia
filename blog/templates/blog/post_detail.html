@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+	<div class="post">
+		{% if user.is_authenticated %}
+			<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+		{% endif %}
+		<h2>{{ post.title }}</h2>
+		<p>{{ post.text|linebreaks }}</p>
+		{% if post.title == "Απλές και πρακτικές συμβουλές εξοικονόμησης ενέργειας" %}
+			{% include 'blog/loading.html' %}
+			{% include 'blog/energysave.html' %}
+		{% endif %}
+		{% if post.title == "Απλές και πρακτικές συμβουλές εξοικονόμησης ενέργειας - Πίνακας Ι" %}
+			{% include 'blog/pinakasI.html' %}
+		{% endif %}
+		{% if post.title == "Απλές και πρακτικές συμβουλές εξοικονόμησης ενέργειας - Πίνακας ΙΙ" %}
+			{% include 'blog/pinakasIΙ.html' %}
+		{% endif %}
+		{% if post.title == "Απλές και πρακτικές συμβουλές εξοικονόμησης ενέργειας - Πίνακας ΙΙΙ" %}
+			{% include 'blog/pinakasIΙΙ.html' %}
+		{% endif %}
+		{% if post.published_date %}
+		<div class="date">
+			{{ post.published_date }}
+		</div>
+		{% endif %}
+	</div>
+{% endblock %}

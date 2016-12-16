@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+	<div align="justify">
+	<h5>Σε περίπτωση που θέλετε να λαμβάνετε επιπλέον ενημερώσεις για εφαρμογές εξοικονόμησης και ανανεώσιμων πηγών ενέργειας,
+		συμπληρώστε τα παρακάτω πεδία που αφορούν τα στοιχεία επικοινωνίας και τα σχόλιά σας σχετικά με την ιστοσελίδα.</h5>
+	</div>
+	<form method="POST" class="post-form">{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit" class="save btn btn-default">Save</button>
+	</form>
+{% endblock %}

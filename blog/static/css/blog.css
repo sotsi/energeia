@@ -1,0 +1,97 @@
+h1 a {
+color: #DF01D7;
+font-family: 'Courier';
+}
+
+body {
+padding-left: 15px;
+}
+
+p {
+	font-size: 18pt;
+}
+
+sup, sub {
+	font-size: 10pt;
+}
+.page-header {
+	background-color: #fcb680;
+	margin-top: 0;
+	padding: 20px 20px 20px 40px;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+	color: #ffffff;
+	font-size: 36pt;
+	text-decoration: none;
+}
+.content {
+	margin-left: 40px;
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Segoe UI', cursive;
+}
+.date {
+	color: #ff9900;
+}
+.save {
+	float: right;
+}
+.post-form textarea, .post-form input {
+	width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+	color: #ffffff;
+	float: right;
+	font-size: 26pt;
+	margin-right: 20px;
+}
+.post {
+	margin-bottom: 70px;
+}
+.post h1 a, .post h1 a:visited {
+	color: #000000;
+}
+
+.post p , li{
+	text-align: justify;
+	font-family: 'Segoe UI';
+	font-size: 16;
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('332.gif') 50% 50% no-repeat rgb(128,179,249);
+}
+
+.code , .pre{
+	background-color: #99ccff;
+	font-family: 'Terminal', cursive;
+	font-size='1';
+	text-align: left;
+}
+
+pre {
+	text-align: left;
+    white-space: pre-line;
+}
